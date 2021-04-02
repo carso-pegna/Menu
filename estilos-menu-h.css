@@ -48,14 +48,20 @@ nav li li {
     width: 200px;
 }
 
+nav li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
 nav li:hover > ul > li{
     max-height: 1000px;
     overflow: visible;
+    display: flex;
+    flex-direction: inherit;
 }
 
 /*TERCER NIVEL*/
 
 .menu ul ul {
     left: 100%;
-    top: 0;
 }
